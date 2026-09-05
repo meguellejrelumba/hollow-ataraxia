@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hollow Ataraxia Shop</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+        header {
+            border-bottom: 2px solid #2e5c8a;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #2e5c8a;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        form fieldset {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        form legend {
+            font-weight: bold;
+            padding: 0 5px;
+            color: #2e5c8a;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        form button {
+            background-color: #2e5c8a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        form button:hover {
+            background-color: #1d3d5e;
+        }
+        footer {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html">&larr; Back to Main Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Get in Touch</h2>
+        <p>Have questions about products or orders? Reach out to us below.</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> support@hollowataraxia.com</p>
+            <p><strong>Location:</strong> Manila, Philippines</p>
+            <p><strong>Hours:</strong> Monday – Friday, 9:00 AM – 5:00 PM</p>
+        </div>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Your details</legend>
+
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+
+                <div>
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="product-question">Product question</option>
+                        <option value="order-status">Order status</option>
+                        <option value="wholesale-enquiry">Wholesale enquiry</option>
+                        <option value="something-else">Something else</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit">Send message</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Created by Meguelle Jr Elumba &middot; 2026</p>
+    </footer>
+
+</body>
+</html>
+

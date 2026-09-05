@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilgamesh Figurine - Details</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <main>
+        <!-- 1. Product Name -->
+        <h1>Gilgamesh Scale Figurine</h1>
+
+        <!-- 2. Product Image -->
+        <img src="https://i.pinimg.com/736x/09/b2/8f/09b28f8b00e4758195b4f19d9bdcdb91.jpg" alt="Gilgamesh figure in full golden armor standing on a pedestal" width="400">
+
+        <!-- 3. Full Description -->
+        <section>
+            <h2>Product Description</h2>
+            <p>A highly detailed scale figurine of the King of Heroes, Gilgamesh. Features polished golden armor, intricate base design, and dynamic sculpting capturing his iconic aura and presence.</p>
+        </section>
+
+        <!-- 4. Specifications Table with <th> headers -->
+        <section>
+            <h2>Specifications</h2>
+            <table border="1">
+                <tr>
+                    <th>Material</th>
+                    <td>PVC & ABS</td>
+                </tr>
+                <tr>
+                    <th>Scale / Height</th>
+                    <td>1/8 Scale (approx. 250mm)</td>
+                </tr>
+                <tr>
+                    <th>Color</th>
+                    <td>Gold / Metallic Finish</td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td>₱2,399.00</td>
+                </tr>
+            </table>
+        </section>
+
+        
+        <section>
+            <h2>Order Enquiry</h2>
+            <form action="#" method="post">
+                
+                
+                <div>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required>
+                </div>
+
+                <!-- 2. Delivery Method -->
+                <fieldset>
+                    <legend>Select Delivery Method</legend>
+                    
+                    <input type="radio" id="standard" name="delivery" value="standard" checked>
+                    <label for="standard">Standard Shipping</label><br>
+
+                    <input type="radio" id="express" name="delivery" value="express">
+                    <label for="express">Express Delivery</label><br>
+
+                    <input type="radio" id="pickup" name="delivery" value="pickup">
+                    <label for="pickup">Store Pickup</label>
+                </fieldset>
+
+               
+                <fieldset>
+                    <legend>Optional Extras</legend>
+
+                    <input type="checkbox" id="gift-wrap" name="extras" value="gift-wrap">
+                    <label for="gift-wrap">Gift Wrapping</label><br>
+
+                    <input type="checkbox" id="insurance" name="extras" value="insurance">
+                    <label for="insurance">Shipping Insurance</label><br>
+
+                    <input type="checkbox" id="express-handling" name="extras" value="express-handling">
+                    <label for="express-handling">Priority Handling</label>
+                </fieldset>
+
+                
+                <div>
+                    <label for="email">Contact Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+        </section>
+
+    </main>
+
+    
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
