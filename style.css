@@ -1,12 +1,15 @@
-
+/* 1. CSS VARIABLES */
 :root {
   --brand-color: #2b6cb0;
   --dark-ink: #1a202c;
   --muted-grey: #718096;
   --light-bg: #f7fafc;
+  --brand: #2a6f97;
+  --card-bg: #f8f9fa;
+  --text-dark: #2b2d42;
 }
 
-
+/* 2. BASE & RESET STYLES */
 *,
 *::before,
 *::after {
@@ -21,22 +24,26 @@ body {
   margin: 0;
 }
 
-
+/* 3. HEADER & NAVIGATION STYLES */
 header {
   background-color: #ffffff;
   padding: 1rem;
   border-bottom: 1px solid var(--muted-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  gap: 20px;
 }
 
 nav li {
-  display: inline-block;
-  margin-right: 1rem;
+  display: block;
 }
 
 nav a {
@@ -48,42 +55,51 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* 4. MAIN CONTENT & LAYOUT */
 main {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: var(--muted-grey);
-  border-top: 1px solid var(--muted-grey);
-}
-
-
-.product-card {
-  background-color: #ffffff;
-  border: 1px solid var(--muted-grey);
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-
-:root {
-  --brand: #2a6f97;
-  --card-bg: #f8f9fa;
-  --text-dark: #2b2d42;
-}
-
-
+/* 5. PRODUCT CARDS (CENTERED CONTENT) */
 .product-card {
   background-color: var(--card-bg);
   border-radius: 8px;
-  padding: 16px;
+  padding: 20px;
   border-left: 5px solid var(--brand);
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.product-card img {
+  width: 100%;
+  max-width: 450px; 
+  height: auto;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+
+
+.product-card a {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: var(--brand);
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.product-card a:hover {
+  background-color: var(--brand-color);
+  text-decoration: none;
 }
 
 .product-card h2,
@@ -93,7 +109,7 @@ footer {
   margin-top: 0;
 }
 
-
+/* 6. FORMS & INPUTS */
 fieldset {
   padding: 20px;
   border-radius: 8px;
@@ -130,10 +146,17 @@ input[type="submit"] {
   font-weight: bold;
 }
 
-
 input:focus,
 textarea:focus,
 button:focus {
   outline: 3px solid var(--brand);
   outline-offset: 2px;
+}
+
+/* 7. FOOTER STYLES */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--muted-grey);
+  border-top: 1px solid var(--muted-grey);
 }
