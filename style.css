@@ -26,6 +26,7 @@ body {
 
 /* 3. HEADER & NAVIGATION STYLES */
 header {
+  grid-area: masthead;
   background-color: #ffffff;
   padding: 1rem;
   border-bottom: 1px solid var(--muted-grey);
@@ -55,11 +56,58 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* 4. MAIN CONTENT & LAYOUT */
-main {
+/* 4. MOBILE-FIRST PAGE SKELETON (Base Layout: Single Column) */
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "masthead"
+    "main"
+    "side"
+    "foot";
+  gap: 16px;
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 0 1rem;
+}
+
+aside {
+  grid-area: side;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+aside h3 {
+  color: var(--brand);
+  margin-top: 0;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  margin-bottom: 8px;
+}
+
+aside a {
+  color: var(--brand-color);
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+main {
+  grid-area: main;
+  margin: 0;
+  max-width: none;
+  padding: 0;
 }
 
 /* 5. PRODUCT GRID & RESPONSIVE CARDS */
@@ -159,8 +207,21 @@ button:focus {
 
 /* 7. FOOTER STYLES */
 footer {
+  grid-area: foot;
   text-align: center;
   padding: 2rem 1rem;
   color: var(--muted-grey);
   border-top: 1px solid var(--muted-grey);
+}
+
+/* 8. TABLET & UP ENHANCEMENT (Min-width media query)[span_3](start_span)[span_3](end_span)[span_4](start_span)[span_4](end_span) */
+@media (min-width: 700px) {
+  .page {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "masthead masthead"
+      "side main"
+      "foot foot";
+    margin: 2rem auto;
+  }
 }
