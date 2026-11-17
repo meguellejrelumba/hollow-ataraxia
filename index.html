@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hollow Ataraxia</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +14,8 @@
     <!-- HEADER / MASTHEAD -->
     <header class="site-header">
       <div class="header-brand">
-        <h1>Hollow Ataraxia</h1>
+        <!-- Target ID for JavaScript Shop Name -->
+        <h1 id="shop-title">Hollow Ataraxia</h1>
         <p>An endless night for true collectors</p>
       </div>
       <nav>
@@ -64,14 +66,22 @@
         </article>
 
       </div>
+
+      <!-- Target ID for JavaScript Calculated Output -->
+      <div style="margin-top: 2rem; padding: 1rem; background: var(--card-bg); border-radius: 8px; border: 1px solid #ccc;">
+        <p id="calc-output" style="font-weight: bold; color: var(--brand); margin: 0;"></p>
+      </div>
     </main>
 
     <!-- FOOTER -->
     <footer>
-      <p>&copy; 2026 Hollow Ataraxia. All rights reserved.</p>
+      <!-- Target ID for JavaScript Dynamic Copyright -->
+      <p id="footer-copyright">&copy; 2026 Hollow Ataraxia. All rights reserved.</p>
     </footer>
 
   </div><!-- /.page -->
 
+  <!-- JavaScript linked just before closing body tag -->
+  <script src="script.js"></script>
 </body>
 </html>
